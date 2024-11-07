@@ -1,0 +1,266 @@
+/* Basic layout and styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #f2e1b3;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #444;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+    text-decoration: underline;
+}
+
+/* Add Button Styling for Wedding Theme */
+.add-note-btn {
+    display: inline-block;
+    background-color: #f2a7b3;
+    /* Soft pink */
+    color: white;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    /* Elegant cursive font */
+    padding: 15px 25px;
+    border-radius: 50%;
+    /* Circular button */
+    border: 2px solid #d25d7a;
+    /* Darker pink border */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    text-align: center;
+    width: 60px;
+    /* Adjusted to make the button round */
+    height: 60px;
+    /* Same as width for a circular shape */
+}
+
+/* Hover effect for the button */
+.add-note-btn:hover {
+    background-color: #d25d7a;
+    /* Darker pink */
+    border-color: #f2a7b3;
+    /* Lighter pink border on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge the button on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Darker shadow on hover */
+}
+
+/* Active (click) state */
+.add-note-btn:active {
+    transform: scale(1);
+    /* Return to original size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow when clicked */
+}
+
+/* Center the button */
+.add-note-btn {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Guestbook section */
+section.guestbook {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Sticky Notes Container */
+.sticky-notes-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+#sticky-notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Sticky Note Styling */
+.sticky-note {
+    width: 180px;
+    height: 180px;
+    background-color: #fff3c6;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    font-family: 'Dancing Script', cursive;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sticky-note p {
+    margin: 0;
+    color: #5a3d33;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Sacramento', cursive;
+    letter-spacing: 0.5px;
+}
+
+.sticky-note textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    font-size: 1rem;
+    padding: 5px;
+    font-family: 'Sacramento', cursive;
+}
+
+.sticky-note button {
+    background-color: #f4b400;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.sticky-note button:hover {
+    background-color: #e68a00;
+}
+
+/* Upload button styling */
+.upload-btn {
+    background-color: #4caf50;
+}
+
+.upload-btn:hover {
+    background-color: #45a049;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Class for the heart button (Wedding style) */
+.tick-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #d25d7a;
+    /* Soft pink for a wedding theme */
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tick-btn:hover {
+    transform: scale(1.2);
+    /* Slightly enlarge on hover for elegance */
+    color: #f2a7b3;
+    /* Light pink shade on hover */
+}
+
+.tick-btn:active {
+    transform: scale(1);
+    /* Return to original size when clicked */
+}
+
+/* Styling for the sticky notes */
+.sticky-note {
+    background-color: #f8e5d9;
+    /* Light pastel background */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    min-height: 150px;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-note textarea {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+}
+
+.sticky-note button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sticky-note {
+        width: 160px;
+        height: 160px;
+    }
+}
