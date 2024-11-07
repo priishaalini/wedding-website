@@ -1,0 +1,155 @@
+/* Wedding page general styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #f2e1b3;
+    /* Light gold background for a wedding feel */
+    font-family: 'Georgia', serif;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #444;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    /* Add some sophistication */
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+    /* Golden hover effect */
+    text-decoration: underline;
+}
+
+/* Section for event details */
+.event-details {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Title Styling */
+.event-details h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for date, venue, and time details */
+.event-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Countdown Timer Styling */
+#wedding-countdown {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Ensure spacing between time units */
+}
+
+/* Style for each time unit (days, hours, minutes, seconds) */
+#wedding-countdown span {
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    display: inline-block;
+}
+
+/* Make sure the layout is in a single line */
+#wedding-countdown span {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Wedding Photo Gallery */
+.photo-gallery {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* QR Code Section Styling */
+h2 {
+    font-size: 1.8rem;
+    margin: 30px 0;
+    color: #333;
+}
+
+.event-details img {
+    max-width: 200px;
+    margin-top: 20px;
+    border: 3px solid #ffcc00;
+    border-radius: 8px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .event-details {
+        padding: 20px;
+    }
+
+    #wedding-countdown {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-gallery img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
